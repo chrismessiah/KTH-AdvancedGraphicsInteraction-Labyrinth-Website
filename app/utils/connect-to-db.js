@@ -1,7 +1,5 @@
 'use strict';
 
-let Promise = require('bluebird');
-
 let pg = require("pg");
 let dbConfig = require('pg-connection-string').parse(process.env.DATABASE_URL || 'postgres://root@localhost:5432/db');
 dbConfig.max = 10; dbConfig.idleTimeoutMillis = 3000;
