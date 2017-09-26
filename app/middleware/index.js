@@ -16,7 +16,13 @@ module.exports = function(app) {
   app.use(require('./add-utils'));
   let controller = require('./add-controllers');
   let router = express.Router();
-  app.use('/api', router); // Register our base-route
+
+  app.use('/', router); // Register our base-route
+
+  // set our assets folders
+  app.use(express.static('public'))
+  app.use(express.static('public-webgl'))
+
   require('../router').getRouter(router, controller);
 
 };
