@@ -52,8 +52,168 @@
 .download-banner
   background-color: #F7F6FF
   width: 100vw
-  height: 300px
+  height: 320px
+  display: flex
+  .column
+    width: 49vw
+    height: inherit
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    .download-bar
+      width: 100px
+      height: 30px
+      display: flex
+      justify-content: space-around
+      align-items: center
+    .vive,
+    .desktop,
+    .windows,
+    .apple,
+    .internet
+      background-size: cover
+      background-position: center
+    .vive
+      width: 193px
+      height: 161px
+      background-position: center
+      background-image: url('/images/vive.png')
+    .desktop
+      width: 252px
+      height: 151px
+      background-image: url('/images/computer.png')
+      position: relative
+      bottom: 10px
+    .windows
+      width: 28px
+      height: 28px
+      background-image: url('/images/windows.png')
+    .apple
+      width: 25px
+      height: 28px
+      background-image: url('/images/apple.png')
+    .internet
+      width: 28px
+      height: 28px
+      background-image: url('/images/internet.png')
 .built-with-banner
   background-color: #2C2C2C
   width: 100vw
-  height: 200px
+  height: 180px
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  h2
+    position: absolute
+    color: white
+    text-align: center
+    font-size: 16px
+    font-weight: 400
+    top: 20px
+    margin: 0
+  .container
+    width: 600px
+    height: 80px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .unity,
+    .github,
+    .blender,
+    .vive,
+    .photoshop
+      background-size: cover
+      background-position: center
+    .unity
+      width: 80px
+      height: 80px
+      background-image: url('/images/unity.png')
+    .github
+      width: 80px
+      height: 78px
+      background-image: url('/images/github.png')
+    .blender
+      width: 80px
+      height: 71px
+      background-image: url('/images/blender.png')
+    .vive
+      width: 80px
+      height: 63px
+      background-image: url('/images/vive-logo.png')
+    .photoshop
+      width: 80px
+      height: 78px
+      background-image: url('/images/photoshop.png')
+.team
+  width: 100vw
+  height: 650px
+  background-color: #F7F6FF
+  display: flex
+  flex-direction: column
+  align-items: center
+  h1
+    margin-top: 40px
+  p
+    width: 500px
+  .splitter
+    width: inherit
+    height: 400px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 20px
+    .column
+      width: 49vw
+      display: flex
+      flex-direction: column
+      align-items: center
+      .student
+        display: flex
+        width: 300px
+        margin-bottom: 20px
+        .christian
+          background-image: url('/images/Christian.png')
+        .adelina
+          background-image: url('/images/Adelina.png')
+        .jun
+          background-image: url('/images/Jun.png')
+        .johan
+          background-image: url('/images/Johan.png')
+        .joakim
+          background-image: url('/images/Joakim.png')
+        .sandra
+          background-image: url('/images/Sandra.png')
+        .profile
+          height: 100px
+          width: 100px
+          background-position: center
+          border-radius: 100px
+          background-size: cover
+        .rest
+          width: 200px
+          p
+            width: 200px
+            margin-top: 0
+            margin-left: 10px
+          ul
+            margin-left: 10px
+            margin-top: 0
+            margin-bottom: 0
+            padding-left: 20px
+            li
+              font-weight: 300
+              font-size: 14px
+.footer
+  width: 100vw
+  height: 60px
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #2C2C2C
+  p
+    margin: 0
+    color: white
+    font-weight: 300
+    font-size: 18px
