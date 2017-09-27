@@ -3,7 +3,5 @@
 const path = require('path');
 
 module.exports = function(req, res) {
-  res.sendFile('index.html', {
-    root: path.join(__dirname, '../../../public-webgl/'),
-  });
+  res.sendFile('index.html', {root: __dirname});
 };
