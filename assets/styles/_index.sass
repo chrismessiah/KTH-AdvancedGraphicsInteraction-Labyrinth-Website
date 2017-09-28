@@ -8,27 +8,34 @@
     background-position: center
     background-repeat: no-repeat
     background-size: cover
-    background-image: url('/images/retro.png')
+    background-image: url('/images/retro.jpeg')
   .screen-splitter
     width: 100vw
-    height: 350px
+    height: 600px
     display: flex
     .column
       display: flex
       flex-direction: column
       align-items: center
-      justify-content: center
-      width: 49vw
+      justify-content: flex-start
+      width: 50vw
       position: relative
-      .screen
-        width: 751px
+      height: inherit
+      .screen-container
+        width: 50vw
         height: 577px
-        background-position: center
-        background-repeat: no-repeat
-        background-size: cover
-        background-image: url('/images/screen.png')
         position: absolute
+        overflow: hidden
         left: 0
+        top: -100px
+        .screen
+          width: 751px
+          height: 577px
+          background-position: center
+          background-repeat: no-repeat
+          background-size: cover
+          background-image: url('/images/screen.jpeg')
+          border-radius: 9px
       .info-container
         width: 350px
         //margin-left: 100px
