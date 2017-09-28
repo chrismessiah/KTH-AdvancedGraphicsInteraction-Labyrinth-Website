@@ -1,48 +1,110 @@
 .banner-bg
-  width: 100vw
-  height: 1130px
   background-color: #111111
+  width: 100vw
+  height: 760px
+  @media screen and (min-width: 420px)
+    height: 850px
+  @media screen and (min-width: 500px)
+    height: 950px
+  @media screen and (min-width: 600px)
+    height: 1000px
+  @media screen and (min-width: 700px)
+    height: 800px
+  @media screen and (min-width: 780px)
+    height: 950px
   .banner
     width: inherit
-    height: 570px
+    height: 250px
+    @media screen and (min-width: 420px)
+      height: 300px
+    @media screen and (min-width: 500px)
+      height: 350px
+    @media screen and (min-width: 780px)
+      height: 400px
     background-position: center
     background-repeat: no-repeat
     background-size: cover
     background-image: url('/images/retro.jpeg')
   .screen-splitter
+    flex-direction: column-reverse
+    display: flex
     width: 100vw
     height: 600px
-    display: flex
+    @media screen and (min-width: 700px)
+      height: 700px
+      flex-direction: row
+    @media screen and (min-width: 780px)
+      height: 600px
+      flex-direction: row
     .column
       display: flex
       flex-direction: column
       align-items: center
       justify-content: flex-start
-      width: 50vw
       position: relative
+      width: 100vw
       height: inherit
-      .screen-container
+      @media screen and (min-width: 780px)
         width: 50vw
-        height: 577px
+      .screen-container
+        width: 100vw
+        height: 403px
+        @media screen and (min-width: 600px)
+          height: 403px
+        @media screen and (min-width: 700px)
+          height: 461px
+        @media screen and (min-width: 780px)
+          width: 50vw
+          height: 577px
         position: absolute
         overflow: hidden
         left: 0
-        top: -100px
+        top: -50px
         .screen
-          width: 751px
-          height: 577px
+          margin: 0 auto
+          width: 300px
+          height: 231px
+          @media screen and (min-width: 420px)
+            width: 375px
+            height: 288px
+          @media screen and (min-width: 500px)
+            width: 450px
+            height: 346px
+          @media screen and (min-width: 600px)
+            width: 525px
+            height: 403px
+          @media screen and (min-width: 700px)
+            width: 600px
+            height: 461px
+            margin: 0
+          @media screen and (min-width: 780px)
+            width: 751px
+            height: 577px
+            margin: 0
           background-position: center
           background-repeat: no-repeat
           background-size: cover
           background-image: url('/images/screen.jpeg')
           border-radius: 9px
       .info-container
-        width: 350px
-        //margin-left: 100px
         display: flex
         flex-direction: column
         align-items: center
         justify-content: center
+        margin-top: -90px
+        width: 300px
+        @media screen and (min-width: 420px)
+          margin-top: -50px
+          width: 350px
+        @media screen and (min-width: 500px)
+          margin-top: 10px
+          width: 350px
+        @media screen and (min-width: 600px)
+          margin-top: 70px
+          width: 350px
+        @media screen and (min-width: 700px)
+          margin-top: 0
+          width: 350px
         p, h1
           color: white
         button
@@ -92,13 +154,25 @@
         transform: translateY(-5px)
         filter: drop-shadow(2px 2px 2px rgb(153, 153, 153))
     .vive
-      width: 193px
-      height: 161px
+      width: 96px
+      height: 80px
+      @media screen and (min-width: 350px)
+        width: 135px
+        height: 113px
+      @media screen and (min-width: 500px)
+        width: 193px
+        height: 161px
       background-position: center
       background-image: url('/images/vive.png')
     .desktop
-      width: 252px
-      height: 151px
+      width: 126px
+      height: 75px
+      @media screen and (min-width: 350px)
+        width: 176px
+        height: 105px
+      @media screen and (min-width: 500px)
+        width: 252px
+        height: 151px
       background-image: url('/images/computer.png')
       position: relative
       bottom: 10px
@@ -117,7 +191,9 @@
 .built-with-banner
   background-color: #2C2C2C
   width: 100vw
-  height: 180px
+  height: 140px
+  @media screen and (min-width: 650px)
+    height: 180px
   display: flex
   justify-content: center
   align-items: center
@@ -131,7 +207,9 @@
     top: 20px
     margin: 0
   .container
-    width: 600px
+    width: 350px
+    @media screen and (min-width: 650px)
+      width: 600px
     height: 80px
     display: flex
     justify-content: space-between
@@ -151,28 +229,45 @@
         animation-timing-function: linear
         animation-iteration-count: 1
     .unity
-      width: 80px
-      height: 80px
+      width: 48px
+      height: 48px
+      @media screen and (min-width: 650px)
+        width: 80px
+        height: 80px
       background-image: url('/images/unity.png')
     .github
-      width: 80px
-      height: 78px
+      width: 48px
+      height: 46px
+      @media screen and (min-width: 650px)
+        width: 80px
+        height: 78px
       background-image: url('/images/github.png')
     .blender
-      width: 80px
-      height: 71px
+      width: 48px
+      height: 43px
+      @media screen and (min-width: 650px)
+        width: 80px
+        height: 71px
       background-image: url('/images/blender.png')
     .vive
-      width: 80px
-      height: 63px
+      width: 48px
+      height: 38px
+      @media screen and (min-width: 650px)
+        width: 80px
+        height: 63px
       background-image: url('/images/vive-logo.png')
     .photoshop
-      width: 80px
-      height: 78px
+      width: 48px
+      height: 46px
+      @media screen and (min-width: 650px)
+        width: 80px
+        height: 78px
       background-image: url('/images/photoshop.png')
 .team
   width: 100vw
-  height: 650px
+  height: 950px
+  @media screen and (min-width: 620px)
+    height: 650px
   background-color: #F7F6FF
   display: flex
   flex-direction: column
@@ -180,14 +275,22 @@
   h1
     margin-top: 40px
   p
-    width: 500px
+    max-width: 500px
+    margin-left: 10px
+    margin-right: 10px
   .splitter
     width: inherit
-    height: 400px
+    height: 800px
     display: flex
+    flex-direction: column
     justify-content: center
     align-items: center
-    margin-top: 20px
+    @media screen and (min-width: 620px)
+      flex-direction: row
+      justify-content: center
+      align-items: center
+      margin-top: 20px
+      height: 400px
     .column
       width: 49vw
       display: flex
