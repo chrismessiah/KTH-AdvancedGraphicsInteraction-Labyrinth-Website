@@ -13,7 +13,6 @@ module.exports = function(app) {
   app.set('port', process.env.PORT || 3000);
   app.use(bodyParser.text());
 
-  app.use(require('./add-utils'));
   let controller = require('./add-controllers');
   let router = express.Router();
 
