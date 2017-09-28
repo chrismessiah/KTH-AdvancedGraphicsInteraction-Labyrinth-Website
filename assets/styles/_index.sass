@@ -38,7 +38,7 @@
         justify-content: center
         p, h1
           color: white
-        .button
+        button
           margin-top: 20px
           color: white
           width: 200px
@@ -48,6 +48,9 @@
           display: flex
           align-items: center
           justify-content: center
+          @extend .linear-transition
+          &:hover
+            background-color: #5d2099
 
 .download-banner
   background-color: #F7F6FF
@@ -74,6 +77,13 @@
     .internet
       background-size: cover
       background-position: center
+    .windows,
+    .apple,
+    .internet
+      @extend .linear-transition
+      &:hover
+        transform: translateY(-5px)
+        filter: drop-shadow(2px 2px 2px rgb(153, 153, 153))
     .vive
       width: 193px
       height: 161px
@@ -90,7 +100,7 @@
       height: 28px
       background-image: url('/images/windows.png')
     .apple
-      width: 25px
+      width: 24px
       height: 28px
       background-image: url('/images/apple.png')
     .internet
@@ -126,6 +136,13 @@
     .photoshop
       background-size: cover
       background-position: center
+      &:hover,
+      &:focus,
+      &:active
+        animation-name: pop-animation
+        animation-duration: 0.2s
+        animation-timing-function: linear
+        animation-iteration-count: 1
     .unity
       width: 80px
       height: 80px
@@ -173,6 +190,13 @@
         display: flex
         width: 300px
         margin-bottom: 20px
+        @extend .linear-transition
+        &:hover
+          transform: translateY(-10px)
+          background-color: #f1eeff
+          border-radius: 4px
+          border-top-left-radius: 100px
+          border-bottom-left-radius: 100px
         .christian
           background-image: url('/images/Christian.png')
         .adelina
@@ -195,8 +219,9 @@
           width: 200px
           p
             width: 200px
-            margin-top: 0
+            margin-top: 10px
             margin-left: 10px
+            color: black
           ul
             margin-left: 10px
             margin-top: 0
@@ -205,6 +230,7 @@
             li
               font-weight: 300
               font-size: 14px
+              color: black
 .footer
   width: 100vw
   height: 60px

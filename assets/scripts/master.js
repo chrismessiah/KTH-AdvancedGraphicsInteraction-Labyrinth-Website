@@ -1,8 +1,8 @@
-var swal = require('sweetalert');
 var $ = require('jquery');
-
+var verifyDownload = require('./verify-download');
+var scrollOnclick = require('./scroll-onclick');
 
 $(document).ready(function() {
-  console.log('RAN!!!! :D');
-  //swal ( "Oops" ,  "Something went wrong!" ,  "error" )
-})
+  verifyDownload();
+  scrollOnclick();
+});
