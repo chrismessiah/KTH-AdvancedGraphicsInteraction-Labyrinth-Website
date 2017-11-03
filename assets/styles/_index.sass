@@ -45,7 +45,9 @@
       width: 100vw
       height: inherit
       @media screen and (min-width: 780px)
-        width: 50vw
+        width: 60vw
+        &:first-child
+          width: 40vw
       .screen-container
         width: 100vw
         height: 403px
@@ -54,7 +56,7 @@
         @media screen and (min-width: 700px)
           height: 461px
         @media screen and (min-width: 780px)
-          width: 50vw
+          width: 60vw
           height: 577px
         position: absolute
         overflow: hidden
@@ -64,23 +66,29 @@
           margin: 0 auto
           width: 300px
           height: 231px
+          padding-top: 6px
           @media screen and (min-width: 420px)
             width: 375px
             height: 288px
+            padding-top: 7px
           @media screen and (min-width: 500px)
             width: 450px
             height: 346px
+            padding-top: 8px
           @media screen and (min-width: 600px)
             width: 525px
             height: 403px
+            padding-top: 12px
           @media screen and (min-width: 700px)
             width: 600px
             height: 461px
             margin: 0
+            padding-top: 15px
           @media screen and (min-width: 780px)
             width: 751px
             height: 577px
             margin: 0
+            padding-top: 12px
           background-position: center
           background-repeat: no-repeat
           background-size: cover
@@ -95,16 +103,16 @@
         width: 300px
         @media screen and (min-width: 420px)
           margin-top: -50px
-          width: 350px
+          max-width: 320px
         @media screen and (min-width: 500px)
           margin-top: 10px
-          width: 350px
+          max-width: 320px
         @media screen and (min-width: 600px)
           margin-top: 70px
-          width: 350px
-        @media screen and (min-width: 700px)
+          max-width: 320px
+        @media screen and (min-width: 960px)
           margin-top: 0
-          width: 350px
+          max-width: 350px
         p, h1
           color: white
         button
