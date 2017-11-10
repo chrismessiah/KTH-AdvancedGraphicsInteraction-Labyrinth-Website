@@ -8,6 +8,7 @@
     <title>Labyrinth</title>
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 
     <link rel="stylesheet" href="master.min.css">
     <script async type="text/javascript" src="master.min.js"></script>
@@ -54,7 +55,6 @@
     </div>
 
     <div class="built-with-banner">
-      <h2>Built with</h2>
       <div class="container">
         <a rel="noopener" target="_blank" href="http://unity3d.com"><div class="unity"></div></a>
         <a rel="noopener" target="_blank" href="http://github.com"><div class="github"></div></a>
@@ -64,98 +64,134 @@
       </div>
     </div>
 
+    <div class="challenges">
+      <h1>Challenges, Obstacles and Conclusions</h1>
+      <ul>
+        <li>We had to rewrite the movement controller to take into account the inverted gravity.</li>
+        <li>The mapping of a flat surface to a cylindrical with deformed wall blocks took a lot if time to work out</li>
+        <li>Cyber sickness was a major challenge and we made several attempts to counter.</li>
+        <li>The procedural maze generation was challenging but we managed to get it working.</li>
+        <li>The procedural mazes were very difficult to play with and we had to figure out how to make them easier.</li>
+        <li>Our limited access to hardware meant we had to plan a lot in advance for the interaction sessions. For project management Trello helped us out a lot.</li>
+        <li>Git and Unity is a nightmare. <strong>Never have people working in the same scenes.</strong> Make sure that you then merge everything on one computer while the whole team is watching. <strong>Avoid 4K resolutions unless you want the Git repo to become an non-convering limit, the git history will scale to infinity and you will need to create a new repo.</strong></li>
+      </ul>
+
+      <h1>Acknowledgements and Inspirations</h1>
+      <p>Big thanks to Pat Monaghan on his work on <a href="https://vec1.itch.io/voi" rel="noopener" target="_blank">Voi</a> and Keigo Matsumoto for the <a href="https://dl.acm.org/citation.cfm?id=2929482" rel="noopener" target="_blank">Unlimited Corridor</a>, these works were sparks for our project</p>
+    </div>
+
+    <div class="quotes-banner">
+      <div class="slick-carousel">
+        <p>"Oj jävlar!"</p>
+        <p>"This is soo trippy and weird"</p>
+        <p>"Uhh I feel sick"</p>
+        <p>"Where am I?"</p>
+        <p>"Now where's the exit?"</p>
+      </div>
+    </div>
+
+
     <div class="team">
       <h1>Our Amazing Team</h1>
       <p>The students that made this project possible! For many of us this was our first graphics project and we were all very content with the outcome. Feel free to contact us if you have questions on our project or interests.</p>
+      <p>We used unity since we had most experience with it and becuase it has great integration support due to a large community. Since VR was fundamental to our idea the HTC Vive was a no-brainer for a room-scale experience. Finally the retro theme gives it a splendid finishing touch that overall makes it feel more solid.</p>
+
       <div class="splitter">
 
-        <div class="column">
-
-          <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/christianabdelmassih/">
-            <div class="student">
-              <div class="christian profile"></div>
-              <div class="rest">
-                <p>Christian Abdelmassih</p>
-                <ul>
-                  <li>Game programmer</li>
-                  <li>Web developer</li>
-                  <li>All-arounder</li>
-                </ul>
+          <div class="tile">
+            <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/christianabdelmassih/">
+              <div class="student">
+                <div class="christian profile"></div>
+                <div class="rest">
+                  <p>Christian Abdelmassih</p>
+                  <ul>
+                    <li>Created the mazes and pipe to generate a maze from an image file</li>
+                    <li>Solved the planear to cylincric coordinate mapping</li>
+                    <li>Created this website!</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
 
-          <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/adelina-tahiri-728b55a1/">
-            <div class="student">
-              <div class="adelina profile"></div>
-              <div class="rest">
-                <p>Adelina Tahiri</p>
-                <ul>
-                  <li>Modeller</li>
-                  <li>Game designer</li>
-                </ul>
+          <div class="tile">
+            <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/adelina-tahiri-728b55a1/">
+              <div class="student">
+                <div class="adelina profile"></div>
+                <div class="rest">
+                  <p>Adelina Tahiri</p>
+                  <ul>
+                    <li>Created the Sun and planets and researched textures</li>
+                    <li>A lot of research on fire</li>
+                    <li>Worked a lot with project management to keep track on deadlines</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
 
-          <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/joakim-adrup/">
-            <div class="student">
-              <div class="joakim profile"></div>
-              <div class="rest">
-                <p>Joakim Adrup</p>
-                <ul>
-                  <li>Graphics programmer</li>
-                  <li>Art designer</li>
-                </ul>
+          <div class="tile">
+            <a rel="noopener" target="_blank" href="">
+              <div class="student">
+                <div class="johan profile"></div>
+                <div class="rest">
+                  <p>Johan Thorell</p>
+                  <ul>
+                    <li>Vive interaction mapping movement vector to cylindric world</li>
+                    <li>Gameplay mechanics on teleporting, locomotion, player physics and rotation</li>
+                    <li>Visual design, multiple cameras for realistic outer space rendering, ligthing and post-processing</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
 
-        </div>
-
-        <div class="column">
-
-          <a rel="noopener" target="_blank" href="">
-            <div class="student">
-              <div class="johan profile"></div>
-              <div class="rest">
-                <p>Johan Thorell</p>
-                <ul>
-                  <li>Graphics programmer</li>
-                  <li>Art designer</li>
-                </ul>
+          <div class="tile">
+            <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/joakim-adrup/">
+              <div class="student">
+                <div class="joakim profile"></div>
+                <div class="rest">
+                  <p>Joakim Adrup</p>
+                  <ul>
+                    <li>Pitched the 80's theme and created shader for it</li>
+                    <li>Created the black hole models and shaders</li>
+                    <li>Built procedual maze generation</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
 
-          <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/sandra-dang-77b3457a/">
-            <div class="student">
-              <div class="sandra profile"></div>
-              <div class="rest">
-                <p>Sandra Dang</p>
-                <ul>
-                  <li>Shader programmer</li>
-                  <li>Modeller</li>
-                  <li>Game designer</li>
-                </ul>
+
+          <div class="tile">
+            <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/sandra-dang-77b3457a/">
+              <div class="student">
+                <div class="sandra profile"></div>
+                <div class="rest">
+                  <p>Sandra Dang</p>
+                  <ul>
+                    <li>Created the deformed wall model elements</li>
+                    <li>Build particle-assisted thunder</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
 
-          <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/jun-zhang-098177134/">
-            <div class="student">
-              <div class="jun profile"></div>
-              <div class="rest">
-                <p>Jun Zhang</p>
-                <ul>
-                  <li>Game programmer</li>
-                  <li>Interaction programmer</li>
-                </ul>
+          <div class="tile">
+            <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/jun-zhang-098177134/">
+              <div class="student">
+                <div class="jun profile"></div>
+                <div class="rest">
+                  <p>Jun Zhang</p>
+                  <ul>
+                    <li>Created meteor rain modelling and physics</li>
+                    <li>Score ranking for competitive play</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </a>
-
-        </div>
+            </a>
+          </div>
 
       </div>
     </div>
