@@ -223,6 +223,7 @@
     color: white
     font-family: 'Courgette', cursive
     font-size: 22px
+
 .built-with-banner
   background-color: #2C2C2C
   width: 100vw
@@ -298,6 +299,7 @@
         width: 80px
         height: 78px
       background-image: url('/images/photoshop.png')
+
 .challenges
   width: 100vw
   min-height: 350px
@@ -315,6 +317,56 @@
       margin-bottom: 8px
       max-width: 800px
       font-size: 14px
+
+.making-of
+  background-color: #111111
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  h1
+    color: white
+    margin: 40px
+  .iframe-container
+    margin-bottom: 40px
+    width: 88vw
+    height: 49.5vw
+    @media screen and (min-width: 600px)
+      width: 72vw
+      height: 40.5vw
+    @media screen and (min-width: 900px)
+      width: 64vw
+      height: 36vw
+  .pictures
+    width: 100vw
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+    .picture
+      width: 300px
+      height: 200px
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: center
+      margin: 30px 15px
+      overflow: hidden
+    .pic
+      &_0
+        background-image: url('/images/making-of-0.jpeg')
+      &_1
+        background-image: url('/images/making-of-1.jpeg')
+      &_2
+        background-image: url('/images/making-of-2.jpeg')
+      &_3
+        background-image: url('/images/making-of-3.jpeg')
+      &_4
+        background-image: url('/images/making-of-4.jpeg')
+      &_5
+        background-image: url('/images/making-of-5.jpeg')
+      &_6
+        background-image: url('/images/making-of-6.jpeg')
+
 .team
   width: 100vw
   background-color: #F7F6FF
@@ -397,6 +449,7 @@
               font-weight: 300
               font-size: 14px
               color: black
+
 .footer
   width: 100vw
   height: 60px
