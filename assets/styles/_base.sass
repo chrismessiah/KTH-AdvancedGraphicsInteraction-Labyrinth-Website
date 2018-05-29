@@ -24,7 +24,8 @@ p
 a
 	text-decoration: none
   color: black
-  @extend .no-user-select
+  user-select: none
+  outline: none
 
 button
   border: none
@@ -32,14 +33,6 @@ button
   background-color: transparent
   &:hover
     cursor: pointer
-  @extend .no-user-select
-
-.no-user-select
-  -webkit-touch-callout: none
-  -webkit-user-select: none
-  -khtml-user-select: none
-  -moz-user-select: none
-  -ms-user-select: none
   user-select: none
   outline: none
 
@@ -50,7 +43,8 @@ button
   -moz-transition-duration: 0.1s
   transition-timing-function: linear
   transition-duration: 0.1s
-  @extend .no-user-select
+  user-select: none
+  outline: none
 
 @keyframes pop-animation
   50%

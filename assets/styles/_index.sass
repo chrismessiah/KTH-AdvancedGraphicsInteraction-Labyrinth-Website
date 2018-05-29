@@ -1,17 +1,6 @@
 .banner-bg
   background-color: #111111
   width: 100vw
-  height: 760px
-  @media screen and (min-width: 420px)
-    height: 850px
-  @media screen and (min-width: 500px)
-    height: 950px
-  @media screen and (min-width: 600px)
-    height: 1000px
-  @media screen and (min-width: 700px)
-    height: 800px
-  @media screen and (min-width: 780px)
-    height: 950px
   .banner
     width: inherit
     height: 250px
@@ -26,93 +15,31 @@
     background-size: cover
     background-image: url('/images/retro.jpeg')
   .screen-splitter
-    flex-direction: column-reverse
+    flex-direction: column
     display: flex
     width: 100vw
-    height: 600px
-    @media screen and (min-width: 700px)
-      height: 700px
-      flex-direction: row
-    @media screen and (min-width: 780px)
-      height: 600px
-      flex-direction: row
-    .column
+    position: relative
+    bottom: 70px
+    .row
       display: flex
-      flex-direction: column
+      justify-content: center
       align-items: center
-      justify-content: flex-start
-      position: relative
-      width: 100vw
-      height: inherit
-      @media screen and (min-width: 780px)
-        width: 60vw
-        &:first-child
-          width: 40vw
-      .screen-container
-        width: 100vw
-        height: 403px
-        @media screen and (min-width: 600px)
-          height: 403px
-        @media screen and (min-width: 700px)
-          height: 461px
-        @media screen and (min-width: 780px)
-          width: 60vw
-          height: 577px
-        position: absolute
-        overflow: hidden
-        left: 0
-        top: -50px
-        .screen
-          margin: 0 auto
-          width: 300px
-          height: 231px
-          padding-top: 6px
-          @media screen and (min-width: 420px)
-            width: 375px
-            height: 288px
-            padding-top: 7px
-          @media screen and (min-width: 500px)
-            width: 450px
-            height: 346px
-            padding-top: 8px
-          @media screen and (min-width: 600px)
-            width: 525px
-            height: 403px
-            padding-top: 12px
-          @media screen and (min-width: 700px)
-            width: 600px
-            height: 461px
-            margin: 0
-            padding-top: 15px
-          @media screen and (min-width: 780px)
-            width: 751px
-            height: 577px
-            margin: 0
-            padding-top: 12px
-          background-position: center
-          background-repeat: no-repeat
-          background-size: cover
-          background-image: url('/images/screen.jpeg')
-          border-radius: 9px
+      .screen
+        border-radius: 9px
+        max-width: 751px
+        max-height: 577px
+        margin-left: 20px
+        margin-right: 20px
+
       .info-container
+        max-width: 500px
+        margin-top: 20px
+        margin-left: 40px
+        margin-right: 40px
         display: flex
         flex-direction: column
         align-items: center
         justify-content: center
-        margin-top: -90px
-        width: 300px
-        @media screen and (min-width: 420px)
-          margin-top: -50px
-          max-width: 320px
-        @media screen and (min-width: 500px)
-          margin-top: 10px
-          max-width: 320px
-        @media screen and (min-width: 600px)
-          margin-top: 70px
-          max-width: 320px
-        @media screen and (min-width: 960px)
-          margin-top: 0
-          max-width: 350px
         p, h1
           color: white
         button
